@@ -92,7 +92,8 @@ Nginx Web Server
 Screenshots are stored in the `screenshots` folder and provide evidence of:
 - Web server access
 - Monitoring alerts
-![VM Overview](screenshots/vm-overview.png)
+![VM 1 Overview](screenshots/vm-web01-overview)
+![VM 2 Overview](screenshots/vm-web02-overview)
 
 ## Key Learnings
 
