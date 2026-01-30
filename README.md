@@ -48,4 +48,10 @@ Linux Virtual Machine (Ubuntu)
 Nginx Web Server
 
 ## Project Implementation Phases
+### Phase 1: Resource Group & Networking
+- Created a dedicated Resource Group to logically organize all project resources
+- Designed a Virtual Network with a custom address space
+- Created a subnet and associated Network Security Group (NSG)
+- Configured inbound security rules to allow HTTP traffic securely
+
 
