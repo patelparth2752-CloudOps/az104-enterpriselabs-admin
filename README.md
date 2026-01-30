@@ -1,125 +1,91 @@
-ENTERPRISE AZ-104 ADMIN PROJECT
-Overview
+project:
+  name: ENTERPRISE AZ-104 ADMIN PROJECT
 
-This project demonstrates real-world Azure Administrator (AZ-104) skills by designing, deploying, securing, monitoring, and cleaning up a production-style Azure environment using best practices.
+  overview: >
+    This project demonstrates hands-on Azure Administrator (AZ-104) skills by
+    designing, deploying, securing, monitoring, and cleaning up a
+    production-style Azure environment using Azure best practices.
+    The environment simulates an enterprise Linux-based web workload.
 
-Technologies Used
+  technologies_used:
+    - Azure Virtual Machines (Linux / Ubuntu)
+    - Azure Virtual Network (VNet) and Subnets
+    - Network Security Groups (NSG)
+    - Azure Monitor and Alerts
+    - Recovery Services Vault (Azure Backup)
+    - Azure RBAC (IAM)
+    - GitHub for documentation
 
-Azure Virtual Machines (Linux)
+  architecture:
+    description: High-level traffic flow
+    flow:
+      - User (Browser)
+      - HTTP (Port 80)
+      - Public IP
+      - Network Security Group (NSG)
+      - Virtual Network (VNet)
+      - Subnet
+      - Linux VM (Ubuntu)
+      - Nginx Web Server
 
-Azure Virtual Network & Subnets
+  project_phases:
+    - phase: Phase 1 - Resource Group & Networking
+      tasks:
+        - Created a Resource Group in East US
+        - Designed a VNet with custom address space
+        - Configured subnets and NSG rules
 
-Network Security Groups (NSG)
+    - phase: Phase 2 - Virtual Machines
+      tasks:
+        - Deployed Linux virtual machines
+        - Selected cost-optimized VM sizes
+        - Configured NICs and public IPs
 
-Azure Monitor & Alerts
+    - phase: Phase 3 - Web Server Configuration
+      tasks:
+        - Installed and configured Nginx
+        - Verified web access via browser
 
-Recovery Services Vault (Backup)
+    - phase: Phase 4 - Monitoring & Alerts
+      tasks:
+        - Enabled Azure Monitor
+        - Created CPU utilization alerts
+        - Validated alerts using simulated CPU load
 
-Azure RBAC (IAM)
+    - phase: Phase 5 - Backup & Recovery
+      tasks:
+        - Configured Recovery Services Vault
+        - Enabled VM backups
+        - Verified backup health and status
 
-GitHub for documentation
+    - phase: Phase 6 - Identity & Access Management (IAM)
+      tasks:
+        - Created a Reader user
+        - Assigned RBAC roles
+        - Validated least-privilege access
 
-Architecture Diagram
+    - phase: Phase 7 - Validation
+      tasks:
+        - Stopped one VM to validate service behavior
+        - Verified alerts, backup configuration, and RBAC restrictions
 
-(High-level flow of traffic)
+    - phase: Phase 8 - Cleanup
+      tasks:
+        - Disabled VM backups
+        - Deleted Recovery Services Vault
+        - Removed all Azure resources to prevent ongoing costs
 
-User (Browser)
-   |
-   | HTTP (Port 80)
-   v
-Public IP
-   |
-   v
-Network Security Group (NSG)
-   |
-   v
-Virtual Network (VNet)
-   |
-   v
-Subnet
-   |
-   v
-Linux VM (Ubuntu)
-   |
-   v
-Nginx Web Server
+  key_learnings:
+    - Azure networking and security fundamentals
+    - Cost control and governance
+    - Monitoring and alerting strategies
+    - Role-based access control (RBAC)
+    - End-to-end resource lifecycle management
 
-Project Phases
-Phase 1: Resource Group & Networking
+  screenshots:
+    location: /screenshots
+    description: Validation screenshots and evidence
 
-Created Resource Group in East US
-
-Designed VNet with custom address space
-
-Configured Subnet and NSG rules
-
-Phase 2: Virtual Machines
-
-Deployed Linux VMs
-
-Selected cost-optimized VM sizes
-
-Configured public IP and NIC
-
-Phase 3: Web Server Configuration
-
-Installed Nginx
-
-Verified web access via browser
-
-Phase 4: Monitoring & Alerts
-
-Enabled Azure Monitor
-
-Created CPU utilization alert
-
-Phase 5: Backup & Recovery
-
-Configured Recovery Services Vault
-
-Enabled VM backup
-
-Verified backup health
-
-Phase 6: Identity & Access Management (IAM)
-
-Created Reader user
-
-Assigned RBAC role
-
-Validated least privilege access
-
-Phase 7: Validation
-
-Stopped one VM and validated service availability
-
-Verified alerts, backup status, and RBAC restrictions
-
-Phase 8: Cleanup
-
-Disabled backups
-
-Deleted Recovery Vault
-
-Deleted all Azure resources to avoid cost
-
-Key Learnings
-
-Azure networking fundamentals
-
-Cost control and governance
-
-Monitoring and operational readiness
-
-Security using RBAC
-
-Proper resource cleanup
-
-Screenshots
-
-Screenshots are stored in the /screenshots folder for validation and evidence.
-
-Author
-
-Parth
-AZ-104 Certified | Aspiring Azure Administrator
+  author:
+    name: Parth
+    title: AZ-104 Certified | Aspiring Azure Administrator
