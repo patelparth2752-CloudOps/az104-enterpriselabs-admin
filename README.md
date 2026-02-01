@@ -110,7 +110,7 @@ Screenshots are stored in the `screenshots` folder and provide evidence of:
 
 **Parth**  
 AZ-104 Certified  
-Aspiring Azure Administrator
+Azure Administrator
 
 
 
