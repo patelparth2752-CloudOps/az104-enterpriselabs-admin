@@ -24,6 +24,8 @@ User requests are sent from a web browser over HTTP (port 80) to the public IP a
 Network Security Group (NSG) rules control and restrict inbound traffic.  
 The traffic flows through the Virtual Network and subnet to a Linux virtual machine running Nginx, which serves the web content.
 
+![Architecture Overview](screenshots/Secure_VM.jpg)
+
 ## Architecture Diagram
 User (Browser)
      |
